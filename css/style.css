@@ -1,17 +1,23 @@
 
 body {
-    background-image: url(http://www.trazeetravel.com/wp-content/uploads/2016/08/Fewa-Lake-Pokhara-Nepal-%C2%A9-Dmitry-Pichugin-Dreamstime-46245291-e1471899678502.jpg);
+    background-image: url('../image/pokhara.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    text-align: center;
+    text-align: center;    
  }
  
  div {
     display: block;
  }
  
+ .nav,
+ .sticky,
+ #guest {      
+     font-family: 'Questrial', sans-serif; 
+ }
+
  .parallax {
     perspective: 1px;
     height: 80vh;
@@ -30,22 +36,39 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 100vh 0;     
+    padding: 60vh 0; 
  }
  
  .parallax_layer-base {
     transform: translateZ(0);
-    color: #fae31c;
-    text-align: center;   
+    color: #c39365;
+    text-align: center;      
+    z-index: 2;
+    height: 90vh;
+    padding-bottom: 60%;
  }
  
  .parallax_layer-back {
     transform: translateZ(-1px);
     color: white;
-    font-weight: bold;
+    font-weight: bold;    
+    z-index: 1;
+    height: 90vh;
+ }
+
+ /***** MAIN TEXT ***/
+
+ #welcome {
+     font-size: 60px;
+     text-shadow: 5px 10px 10px #183D4D;
+     letter-spacing: 5px;
+     font-family: 'Lily Script One', cursive;  
  }
  
- 
+ #guest {
+     font-size: 50px;
+ }
+
  /*******************
  ***** NAVIGATION ***
  *******************/
@@ -53,24 +76,86 @@ body {
     position: fixed; 
     top: 0;
     width: 100%;
-    background: blur(5px);
+    background: blur(10px);
     height: 100px;
     margin-top: 30px;
     margin-bottom: 30px;
+    z-index: 5;
  }
  
  .nav a {
     margin: 50px;
-    color: #fae31c;
+    color: #312b42;
     font-size: 20px;
+    text-decoration: none;    
+    position: relative;
  }
  
- 
- 
+ .blur{
+    background-image: url('../image/pokhara.jpg');
+	background-size:cover;
+	height: 90px;
+	width: 100%;
+	filter:blur(20px);
+	left: 0;
+	top: 0;
+	position: absolute;
+	z-index: 1;
+  }
+
+  .border-right {
+      border-right: 2px solid #c39365;
+      padding-right: 50px;
+      margin-right: 0 !important;
+  }
+
+  #book {
+      color: #c39365 !important;
+  }
+
+ /******************
+ ****** INPUT ******
+ ******************/
+ .date-input {
+     z-index: 3;
+     color: white;
+     position: relative;
+     height: 100px;
+     background-color:rgba(161, 128, 85, 0.6);
+     width: 50%;
+     margin: 0 auto;
+     border-radius: 10px;
+ }
+
+.sticky {
+    align-content: center;
+}
+
+ .row {
+     display: flex;
+     float: right;
+     text-align: center;
+ }
+
+.row div {
+    padding: 10px;
+}
+
+.number {
+    width: 50px;
+    height: 18px;
+}
+
+button {
+    height: 30px;
+    margin: 30px 20px 10px;
+}
  /**********************
  ****' HOTEL ROOM ******
  **********************/
  .hotel-room {
     height: 100px;
     margin: 10px 150px;
+    color: white;
  }
+

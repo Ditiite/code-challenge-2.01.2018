@@ -3,53 +3,54 @@
    <head>
       <meta charset="utf-8">
       <title>Welcome to Pokhara</title>
-      <link rel="stylesheet" href="style.css">
-   </head>
-
+      <link rel="stylesheet" href="css/style.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Lily+Script+One|Questrial" rel="stylesheet">
    <body>
+       <div class="blur"></div>
         <div class="nav">
-                <a href="#">Home</a>
-                <a href="#">Our Apartment</a>
-                <a href="#">Rio</a>
-                <a href="#">Contact</a>
-                <a href="#">Book</a>
-             </div>
+            <a href="#">Home</a>
+            <a href="#">Our Apartment</a>
+            <a href="#">Pokhara</a>
+            <a href="#" class="border-right">Contact</a>
+            <a href="#" id="book">Book</a>
+        </div>
              
-             <div class="parallax">
-                <div class="parallax_layer parallax_layer-back">
-                   <p> Be my guest</p>
+        <div class="parallax">
+            <div class="parallax_layer parallax_layer-back">
+                <p id="guest"> Be my guest</p>
+            </div>
+            <div class="parallax_layer parallax_layer-base">
+                <p id="welcome">༻ Welcome to Pokhara ༺</p>
+            </div> 
+        </div>
+
+        <div class="date-input sticky">
+            <div class="row">
+                <div>
+                    <p>Check in</p>
+                    <input type="date" class="myDate" value="2018-01-01"></input>
                 </div>
-                <div class="parallax_layer parallax_layer-base">
-                   <p>༻ Welcome to Pokhara ༺</p>         
-                </div> 
-             </div>
-             
-             <div class="date-input">
-                <input type="date" class="myDate" value="2018-01-01">Check in </input>
-                <input type="date" class="myDate" value="2018-01-01">Check out</input>
-                <input class="number" type="number" min="1">Adults</input>
-                <input class="number" type="number" min="0">Kids</input>
+                <div>
+                    <p>Check out</p>
+                    <input type="date" class="myDate" value="2018-01-01"></input>
+                </div>
+                <div>
+                    <p>Adults</p>
+                    <input class="number" type="number" min="1"></input> 
+                </div>
+                <div>
+                    <p>Kids</p>
+                    <input class="number" type="number" min="0"></input> 
+                </div>                
                 <button>Search</button>
-             </div>
-             
-             
-             </div>
-             
-             <div class="hotel-room">
-                <p>HOTEL ROOM</p>
-             </div>
-             <div class="hotel-room">
-                <p>HOTEL ROOM</p>
-             </div>
-             <div class="hotel-room">
-                <p>HOTEL ROOM</p>
-             </div>
-             <div class="hotel-room">
-                <p>HOTEL ROOM</p>
-             </div>
-             <div class="hotel-room">
-                <p>HOTEL ROOM</p>
-             </div>
-    <script src="index.js"></script>
+            </div>            
+        </div>
+
+        <div class="hotel-rooms">
+            
+        </div>
+
+    <script src="js/index.js"></script>
    </body>
 </html>  
