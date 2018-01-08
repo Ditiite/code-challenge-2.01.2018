@@ -6,6 +6,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     text-align: center;    
+    font-family: 'Vollkorn SC', serif;
  }
  
  div {
@@ -14,8 +15,9 @@ body {
  
  .nav,
  .sticky,
- #guest {      
-     font-family: 'Questrial', sans-serif; 
+ #guest {   
+    font-family: 'Vollkorn SC', serif;   
+    /* font-family: 'Questrial', sans-serif;  */
  }
 
  .parallax {
@@ -41,7 +43,7 @@ body {
  
  .parallax_layer-base {
     transform: translateZ(0);
-    color: #c39365;
+    color: #EEA260;
     text-align: center;      
     z-index: 2;
     height: 90vh;
@@ -50,8 +52,7 @@ body {
  
  .parallax_layer-back {
     transform: translateZ(-1px);
-    color: white;
-    font-weight: bold;    
+    color: #F8D8A7;   
     z-index: 1;
     height: 90vh;
  }
@@ -59,14 +60,16 @@ body {
  /***** MAIN TEXT ***/
 
  #welcome {
-     font-size: 60px;
-     text-shadow: 5px 10px 10px #183D4D;
-     letter-spacing: 5px;
-     font-family: 'Lily Script One', cursive;  
+    font-weight: bold;
+    font-size: 60px;
+    text-shadow: 5px 10px 10px #183D4D;
+    letter-spacing: 5px;
+    font-family: 'Vollkorn SC', serif;
+    /* font-family: 'Lily Script One', cursive;   */
  }
  
  #guest {
-     font-size: 50px;
+    font-size: 50px;
  }
 
  /*******************
@@ -104,37 +107,70 @@ body {
   }
 
   .border-right {
-      border-right: 2px solid #c39365;
-      padding-right: 50px;
-      margin-right: 0 !important;
+    border-right: 2px solid #c39365;
+    padding-right: 50px;
+    margin-right: 0 !important;
   }
 
   #book {
-      color: #c39365 !important;
+    color: #c39365 !important;
   }
 
  /******************
  ****** INPUT ******
  ******************/
  .date-input {
-     z-index: 3;
-     color: white;
-     position: relative;
-     height: 100px;
-     background-color:rgba(161, 128, 85, 0.6);
-     width: 50%;
-     margin: 0 auto;
-     border-radius: 10px;
+    z-index: 3;
+    color: #F8D8A7;
+    position: relative;
+    height: 100px;
+    background-color:rgba(161, 128, 85, 0.7);
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
  }
+
+input {
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    color: #947D5A;
+    font-family: 'Vollkorn SC', serif;
+}
+
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+	opacity: 0;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+	background: url(https://cdn3.iconfinder.com/data/icons/iconic-1/32/calendar_alt_fill-48.png) center/80% no-repeat;
+	color: rgba(148,125, 90, 0);
+	opacity: 0.5
+}
+	
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    background: url(https://cdn3.iconfinder.com/data/icons/iconic-1/32/calendar_alt_fill-48.png) center/80% no-repeat;
+    opacity: 0.8
+}
 
 .sticky {
     align-content: center;
 }
 
+.sticky p {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
  .row {
-     display: flex;
-     float: right;
-     text-align: center;
+    display: flex;     
+    text-align: center;
+    justify-content: center;
  }
 
 .row div {
@@ -147,8 +183,16 @@ body {
 }
 
 button {
-    height: 30px;
-    margin: 30px 20px 10px;
+    padding: 0 20px;
+    height: 29px;
+    margin: 52px 20px 10px;
+    border-radius: 3px;
+    letter-spacing: 3px;
+    color: #c39365;
+    background-color: #312b42;
+    outline-color: #c39365;
+    font-family: 'Vollkorn SC', serif;
+    border: none;
 }
  /**********************
  ****' HOTEL ROOM ******
