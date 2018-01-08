@@ -4,6 +4,7 @@
       <meta charset="utf-8">
       <title>Welcome to Pokhara</title>
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/media.css">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
       <link href="https://fonts.googleapis.com/css?family=Lily+Script+One|Questrial|Vollkorn+SC" rel="stylesheet">
    <body>
@@ -22,7 +23,7 @@
                 <p id="guest">༻ Be my guest ༺</p>
             </div>
             <div class="parallax_layer parallax_layer-base">
-                <p id="welcome">Welcome to Pokhara</p>
+                <p id="welcome">Welcome to Pokhara</p>                
             </div> 
         </div>
 
@@ -31,17 +32,17 @@
             <div class="row">
                 <div>
                     <p>Check in</p>
-                    <input type="date" class="myDate" value="dd/mm/yyyy"></input>
+                    <input type="date" class="date" value="dd/mm/yyyy"></input>
                 </div>
                 <div>
                     <p>Check out</p>
-                    <input type="date" class="myDate" value="dd/mm/yyyy"></input>
+                    <input type="date" class="date" value="dd/mm/yyyy"></input>
                 </div>
-                <div>
+                <div class="number-right">
                     <p>Adults</p>
                     <input class="number" type="number" value="1" min="1"></input> 
                 </div>
-                <div>
+                <div  class="number-right">
                     <p>Kids</p>
                     <input class="number" type="number" value="0" min="0"></input> 
                 </div>                
@@ -49,9 +50,9 @@
             </div>            
         </div>
         <!-- TODO: ADD hotel rooms to parallax after the search button pressed -->
-        <div class="hotel-rooms">
+        <!-- <div class="hotel-rooms">
             
-        </div>
+        </div> -->
 
     <script src="js/index.js"></script>
    </body>

@@ -1,0 +1,45 @@
+@media screen and (max-width: 1000px) {
+    .parallax {
+        height: 80vh;        
+     }     
+     
+     .parallax_layer {
+        padding: 60vh 0; 
+     }
+     
+     .parallax_layer-base {
+        height: 40vh;
+     }
+     
+     .parallax_layer-back {
+        height: 60vh;
+     }
+       
+     .nav a {
+        margin: 10px;
+        font-size: 20px;        
+     }
+
+     .border-right {
+        padding-right: 30px;
+        margin-right: 0 !important;
+      }
+}
+
+@media screen and (max-width: 790px) {
+    #welcome {    
+        font-size: 45px;
+    }    
+    .row {
+        width: 100% !important;
+        margin: 0;
+        display: flex;
+    }
+
+    .date-input {
+        width: 100% !important;
+       display: flex;
+
+    }
+     
+}
